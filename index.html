@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Maorent! 🎉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LAYAR PEMBUKA (WELCOME SCREEN) -->
+<div id="welcomeOverlay" class="welcome-overlay">
+  <div class="welcome-content">
+    <h2>Hai, Bernadeth! 👋</h2>
+    <p>Ada kejutan kecil buat kamu...</p>
+    <button id="openBtn">Buka Kejutan 🎁</button>
+  </div>
+</div>
+
+<div class="progress-bar" id="progressBar"></div>
+<button class="music-toggle" id="musicToggle" aria-label="Putar musik ulang tahun">
+  <span class="note">♪</span>
+  <span class="bars"><span></span><span></span><span></span></span>
+</button>
+<div class="balloon-field" id="balloonField"></div>
+<canvas id="confetti-canvas"></canvas>
+
+<section class="hero">
+  <h1 id="heroTitle"><span class="name">Happy Birthday,</span> <span class="name">Sayangku! 🎈</span></h1>
+  <div class="eyebrow" id="heroEyebrow">20 tahun sudah berlalu</div>
+  <div class="age-badge" id="badgeReveal"><span><b>20</b><small>TAHUN</small></span></div>
+  <p class="tagline" id="heroTagline">Satu hari spesial, satu tahun baru, dan segudang keseruan yang nunggu buat di-unlock. Yuk mulai! 👇</p>
+  <div class="scroll-hint" id="heroScrollHint"><span>Geser ke bawah</span><span class="arrow">↓</span></div>
+</section>
+
+<div class="wave-divider"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z"></path></svg></div>
+
+<section class="cake-section">
+  <h2 data-reveal>Tiup lilinnya dulu, Sayang 🕯️</h2>
+  <p class="hint" data-reveal data-reveal-delay="1">Klik satu-satu tiap lilin biar padam</p>
+  <div class="cake-wrap" data-reveal data-reveal-delay="2">
+    <div class="cake">
+      <div class="candles" id="candles"></div>
+      <div class="tiers">
+        <div class="tier tier1"></div>
+        <div class="tier tier2"></div>
+        <div class="tier tier3"></div>
+      </div>
+      <div class="plate"></div>
+    </div>
+  </div>
+  <div class="cake-status" id="cakeStatus">5 lilin lagi nunggu ditiup...</div>
+</section>
+
+<section class="message-wrap" id="messageWrap">
+  <div class="message-card">
+    <h3>Buat Sayangku, Bernadeth Maorencia Gozales 💌</h3>
+    <p>Happy birthday, Sayangku! 🥳🎂</p>
+    <p>Semoga di umur yang baru ini kamu selalu dikasih kesehatan, kebahagiaan, dan banyak hal baik yang datang ke hidup kamu. Semoga semua yang kamu semogakan bisa satu-satu tercapai, urusannya dilancarkan, dan selalu dikelilingi orang-orang yang sayang sama kamu.</p>
+    <p>Tetap jadi kamu yang seru, baik, dan apa adanya yaa. Jangan lupa bahagia, jangan terlalu sering overthinking, dan semoga tahun ini jadi tahun yang jauh lebih baik dari sebelumnya. ❤️</p>
+    <p>Pokoknya, selamat ulang tahun, Cintaku! Have a great day and enjoy your special day! 🎉✨</p>
+    <p style="font-style:italic; opacity:.85;">Bonus dikit ya biar makin receh: semoga tahun ini kamu sehat terus, semoga ahun ini jadi tahun yang baik buat kamu, dan semoga hubungan kita makin erat yaa. Semangat terus cerita ceritanya cintakuu. 😂🎈</p>
+    <div class="sign">— Dari Suamimu, Ezra. ✨</div>
+  </div>
+</section>
+
+<div class="wave-divider flip"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z"></path></svg></div>
+
+<section class="facts" id="factsWrap">
+  <h2 data-reveal>Receh <span>versi 20</span></h2>
+  <div class="fact-grid" id="factGrid"></div>
+</section>
+
+<section class="gallery" id="galleryWrap">
+  <h2 data-reveal>Foto-foto Kamu 📸</h2>
+  <p class="hint" data-reveal data-reveal-delay="1">kenangan yang cuma bisa aku cari di sosmed.</p>
+  
+  <!-- Tombol upload dihapus -->
+
+  <div class="polaroid-grid" id="polaroidGrid">
+    <!-- Masukkan foto-foto secara manual di sini -->
+    
+    <div class="polaroid">
+      <img src="maorent (1).jpeg" alt="Foto Maorent 1">
+    </div>
+    
+    <div class="polaroid">
+      <img src="maorent (2).jpeg" alt="Foto Maorent 2">
+    </div>
+    
+    <div class="polaroid">
+      <img src="maorent (3).jpeg" alt="Foto Maorent 3">
+    </div>
+
+    <div class="polaroid">
+      <img src="maorent (4).jpeg" alt="Foto Maorent 4">
+    </div>
+
+    <div class="polaroid">
+      <img src="maorent (5).jpeg" alt="Foto Maorent 5">
+    </div>
+
+    <div class="polaroid">
+      <img src="maorent (6).jpeg" alt="Foto Maorent 6">
+    </div>
+    
+    <div class="polaroid">
+      <img src="maorent.jpeg" alt="Foto Maorent 7">
+    </div>
+
+    
+    <!-- Kamu bisa copy-paste div class="polaroid" ke bawah jika fotonya lebih dari 3 -->
+  </div>
+
+  <div class="wish-box" data-reveal>
+    <h3>Ada pesan atau permintaan? 💬</h3>
+    <p class="hint" style="margin-bottom:1.2rem;">Tulis di sini, nanti langsung kekirim lewat WhatsApp</p>
+    <textarea id="wishInput" placeholder="Tulis pesan atau permintaan kamu di sini ya..." rows="4"></textarea>
+    <button class="send-btn" id="sendWishBtn">
+      <span class="wa-icon">💬</span> Kirim ke WhatsApp
+    </button>
+  </div>
+</section>
+
+
+<footer>
+  <div class="big" data-reveal>Selamat ulang tahun, Sayang! 🎈</div>
+  <p data-reveal data-reveal-delay="1">Dibuat dengan hati yang tulus, sedikit receh, dan banyak doa baik.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
