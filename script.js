@@ -328,9 +328,9 @@ function updateStatus() {
 
 // ============ Fun facts (Kata-kata buat Maorent) ============
 const facts = [
-  "Umur 20 itu udah cukup buat menjadi wanita dewasa sayang.",
-  "Di umur ini, cinta sama pentingnya dengan duit.",
-  "20 tahun = udah waktunya fokus samaku selamanya.",
+  "Umur 20 itu berarti udah resmi menjadi wanita dewasa sayang.",
+  "Di umur ini, cinta sama pentingnya dengan duit cintaku.",
+  "20 tahun = waktunya fokus sama hubungan kita selamanya.",
   "Semoga tahun ini kamu menjadi wanita gacor.",
   "Selamat resmi jadi manusia usia 20: masih boleh childish, tinggal samarin pake muka galak."
 ];
